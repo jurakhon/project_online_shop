@@ -1,0 +1,26 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+</head>
+<body>
+<div class="container">
+    {% block content %}
+        {% for order in order_list %}
+            <div class="order-card">
+                <h2>Order ID: <span>{{ order.id }}</span></h2>
+                <h2>User: <span>{{ order.user }}</span></h2>
+                <h2>Product: <span>{{ order.product }}</span></h2>
+                <h2>Product Price: <span>${{ order.product.price }}</span></h2>
+                <h2>Order Date: <span>{{ order.ordered_date }}</span></h2>
+            </div>
+        {% endfor %}
+    {% endblock content %}
+</div>
+</body>
+</html>

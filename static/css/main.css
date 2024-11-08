@@ -1,0 +1,38 @@
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    background-color: chocolate;
+   display: flex;
+    width: 31%;
+}
+
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: Blue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: Blue;
+}
+
+.header .h1 {
+    font-size: 100px;
+    
+}

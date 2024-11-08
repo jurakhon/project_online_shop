@@ -1,0 +1,42 @@
+/* CSS for order list */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h2 {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.order-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.order-card h2 span {
+    font-weight: normal;
+    color: #666;
+}

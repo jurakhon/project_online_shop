@@ -1,0 +1,69 @@
+/* style.css */
+
+/* General body and layout styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container to hold the content */
+.container {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Styling for each product card */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for product image */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product name and other details */
+.product-card h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745; /* Green for price */
+    margin-bottom: 1em;
+}
+
+.product-card .stock {
+    font-size: 1em;
+    color: #888;
+}
+
+.product-card .id {
+    font-size: 1em;
+    color: #777;
+    margin-top: 1em;
+}
+
+/* Responsive grid layout for products */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+}
